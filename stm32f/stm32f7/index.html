@@ -1,0 +1,1214 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+<title>Compare peripherals</title>
+</head>
+<style>
+table thead tr th {
+    position: sticky;
+    top: 0;
+    z-index: 6;
+    background: white;
+}
+td:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 5;
+    background: white;
+}
+</style>
+<body>
+<h1>Compare peripherals</h1>
+<table><thead><tr><th>Peripheral</th><th>Address</th>
+<th>stm32f7x2</th>
+<th>stm32f7x3</th>
+<th>stm32f730</th>
+<th>stm32f745</th>
+<th>stm32f750</th>
+<th>stm32f7x6</th>
+<th>stm32f765</th>
+<th>stm32f7x7</th>
+<th>stm32f7x9</th>
+</thead><tbody>
+<tr><td><a href="AC_0xE000EF90.html">AC</a></td><td>0xE000EF90</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="ADC1_0x40012000.html">ADC1</a></td><td>0x40012000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="ADC2_0x40012100.html">ADC2</a></td><td>0x40012100</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="ADC3_0x40012200.html">ADC3</a></td><td>0x40012200</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="ADC_Common_0x40012300.html">ADC_Common</a></td><td>0x40012300</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="AES_0x50060000.html">AES</a></td><td>0x50060000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006400.html">CAN1</a></td><td>0x40006400</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN2_0x40006800.html">CAN2</a></td><td>0x40006800</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN3_0x40003400.html">CAN3</a></td><td>0x40003400</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CEC_0x40006C00.html">CEC</a></td><td>0x40006C00</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CRC_0x40023000.html">CRC</a></td><td>0x40023000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CRYP_0x50060000.html">CRYP</a></td><td>0x50060000</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="DAC_0x40007400.html">DAC</a></td><td>0x40007400</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="DBGMCU_0xE0042000.html">DBGMCU</a></td><td>0xE0042000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="DCMI_0x50050000.html">DCMI</a></td><td>0x50050000</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="DFSDM_0x40017400.html">DFSDM</a></td><td>0x40017400</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="DFSDM1_0x40017400.html">DFSDM1</a></td><td>0x40017400</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+</tr>
+<tr><td><a href="DMA1_0x40026000.html">DMA1</a></td><td>0x40026000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="DMA2_0x40026400.html">DMA2</a></td><td>0x40026400</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="DMA2D_0x4002B000.html">DMA2D</a></td><td>0x4002B000</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="DSI_0x40016C00.html">DSI</a></td><td>0x40016C00</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="EXTI_0x40013C00.html">EXTI</a></td><td>0x40013C00</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="Ethernet_DMA_0x40029000.html">Ethernet_DMA</a></td><td>0x40029000</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="Ethernet_MAC_0x40028000.html">Ethernet_MAC</a></td><td>0x40028000</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="Ethernet_MMC_0x40028100.html">Ethernet_MMC</a></td><td>0x40028100</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="Ethernet_PTP_0x40028700.html">Ethernet_PTP</a></td><td>0x40028700</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="FLASH_0x40023C00.html">FLASH</a></td><td>0x40023C00</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="FMC_0xA0000000.html">FMC</a></td><td>0xA0000000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="FPU_0xE000EF34.html">FPU</a></td><td>0xE000EF34</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="FPU_CPACR_0xE000ED88.html">FPU_CPACR</a></td><td>0xE000ED88</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="GPIOA_0x40020000.html">GPIOA</a></td><td>0x40020000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="GPIOB_0x40020400.html">GPIOB</a></td><td>0x40020400</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="GPIOC_0x40020800.html">GPIOC</a></td><td>0x40020800</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="GPIOD_0x40020C00.html">GPIOD</a></td><td>0x40020C00</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="GPIOE_0x40021000.html">GPIOE</a></td><td>0x40021000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="GPIOF_0x40021400.html">GPIOF</a></td><td>0x40021400</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="GPIOG_0x40021800.html">GPIOG</a></td><td>0x40021800</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="GPIOH_0x40021C00.html">GPIOH</a></td><td>0x40021C00</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="GPIOI_0x40022000.html">GPIOI</a></td><td>0x40022000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="GPIOJ_0x40022400.html">GPIOJ</a></td><td>0x40022400</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="GPIOK_0x40022800.html">GPIOK</a></td><td>0x40022800</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="HASH_0x50060400.html">HASH</a></td><td>0x50060400</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="I2C1_0x40005400.html">I2C1</a></td><td>0x40005400</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="I2C2_0x40005800.html">I2C2</a></td><td>0x40005800</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="I2C3_0x40005C00.html">I2C3</a></td><td>0x40005C00</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="I2C4_0x40006000.html">I2C4</a></td><td>0x40006000</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="IWDG_0x40003000.html">IWDG</a></td><td>0x40003000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="JPEG_0x50051000.html">JPEG</a></td><td>0x50051000</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="LPTIM1_0x40002400.html">LPTIM1</a></td><td>0x40002400</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="LTDC_0x40016800.html">LTDC</a></td><td>0x40016800</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="MDIOS_0x40017800.html">MDIOS</a></td><td>0x40017800</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="MPU_0xE000ED90.html">MPU</a></td><td>0xE000ED90</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="NVIC_0xE000E100.html">NVIC</a></td><td>0xE000E100</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="NVIC_STIR_0xE000EF00.html">NVIC_STIR</a></td><td>0xE000EF00</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="OTG_FS_DEVICE_0x50000800.html">OTG_FS_DEVICE</a></td><td>0x50000800</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="OTG_FS_GLOBAL_0x50000000.html">OTG_FS_GLOBAL</a></td><td>0x50000000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="OTG_FS_HOST_0x50000400.html">OTG_FS_HOST</a></td><td>0x50000400</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="OTG_FS_PWRCLK_0x50000E00.html">OTG_FS_PWRCLK</a></td><td>0x50000E00</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="OTG_HS_DEVICE_0x40040800.html">OTG_HS_DEVICE</a></td><td>0x40040800</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="OTG_HS_GLOBAL_0x40040000.html">OTG_HS_GLOBAL</a></td><td>0x40040000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="OTG_HS_HOST_0x40040400.html">OTG_HS_HOST</a></td><td>0x40040400</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="OTG_HS_PWRCLK_0x40040E00.html">OTG_HS_PWRCLK</a></td><td>0x40040E00</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="PF_0xE000ED78.html">PF</a></td><td>0xE000ED78</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="PWR_0x40007000.html">PWR</a></td><td>0x40007000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="QUADSPI_0xA0001000.html">QUADSPI</a></td><td>0xA0001000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="RCC_0x40023800.html">RCC</a></td><td>0x40023800</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="RNG_0x50060800.html">RNG</a></td><td>0x50060800</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="RTC_0x40002800.html">RTC</a></td><td>0x40002800</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="SAI1_0x40015800.html">SAI1</a></td><td>0x40015800</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="SAI2_0x40015C00.html">SAI2</a></td><td>0x40015C00</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="SCB_0xE000ED00.html">SCB</a></td><td>0xE000ED00</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="SCB_ACTRL_0xE000E008.html">SCB_ACTRL</a></td><td>0xE000E008</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="SDMMC1_0x40012C00.html">SDMMC1</a></td><td>0x40012C00</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="SDMMC2_0x40011C00.html">SDMMC2</a></td><td>0x40011C00</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="SPDIFRX_0x40004000.html">SPDIFRX</a></td><td>0x40004000</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="SPI1_0x40013000.html">SPI1</a></td><td>0x40013000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="SPI2_0x40003800.html">SPI2</a></td><td>0x40003800</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="SPI3_0x40003C00.html">SPI3</a></td><td>0x40003C00</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="SPI4_0x40013400.html">SPI4</a></td><td>0x40013400</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="SPI5_0x40015000.html">SPI5</a></td><td>0x40015000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="SPI6_0x40015400.html">SPI6</a></td><td>0x40015400</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="STK_0xE000E010.html">STK</a></td><td>0xE000E010</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="SYSCFG_0x40013800.html">SYSCFG</a></td><td>0x40013800</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="TIM1_0x40010000.html">TIM1</a></td><td>0x40010000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="TIM10_0x40014400.html">TIM10</a></td><td>0x40014400</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="TIM11_0x40014800.html">TIM11</a></td><td>0x40014800</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="TIM12_0x40001800.html">TIM12</a></td><td>0x40001800</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="TIM13_0x40001C00.html">TIM13</a></td><td>0x40001C00</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="TIM14_0x40002000.html">TIM14</a></td><td>0x40002000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="TIM2_0x40000000.html">TIM2</a></td><td>0x40000000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="TIM3_0x40000400.html">TIM3</a></td><td>0x40000400</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="TIM4_0x40000800.html">TIM4</a></td><td>0x40000800</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="TIM5_0x40000C00.html">TIM5</a></td><td>0x40000C00</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="TIM6_0x40001000.html">TIM6</a></td><td>0x40001000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="TIM7_0x40001400.html">TIM7</a></td><td>0x40001400</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="TIM8_0x40010400.html">TIM8</a></td><td>0x40010400</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="TIM9_0x40014000.html">TIM9</a></td><td>0x40014000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="UART4_0x40004C00.html">UART4</a></td><td>0x40004C00</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="UART5_0x40005000.html">UART5</a></td><td>0x40005000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="UART7_0x40007800.html">UART7</a></td><td>0x40007800</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="UART8_0x40007C00.html">UART8</a></td><td>0x40007C00</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="USART1_0x40011000.html">USART1</a></td><td>0x40011000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="USART2_0x40004400.html">USART2</a></td><td>0x40004400</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="USART3_0x40004800.html">USART3</a></td><td>0x40004800</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="USART6_0x40011400.html">USART6</a></td><td>0x40011400</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="USBPHYC_0x40017C00.html">USBPHYC</a></td><td>0x40017C00</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+</tr>
+<tr><td><a href="WWDG_0x40002C00.html">WWDG</a></td><td>0x40002C00</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+</tr>
+</tbody></table>
+</body></html>
